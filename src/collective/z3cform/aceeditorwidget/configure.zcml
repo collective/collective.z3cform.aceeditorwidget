@@ -1,0 +1,37 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="collective.z3cform.aceeditorwidget">
+
+    <genericsetup:registerProfile
+        name="default"
+        title="z3cform ACE editor widget"
+        directory="profiles/default"
+        description="Installs the collective.z3cform.aceeditorwidget add-on."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <class class=".aceeditor.AceEditorWidget">
+      <require
+          permission="zope.Public"
+          interface=".aceeditor.IAceEditorWidget"
+        />
+    </class>
+
+    <z3c:widgetTemplate
+        mode="input"
+        widget=".aceeditor.IAceEditorWidget"
+        layer=".interfaces.ILayer"
+        template="aceeditor_input.pt"
+        />
+
+    <browser:resourceDirectory
+        name="z3cform.aceeditorwidget"
+        directory="resources"
+        />
+
+</configure>

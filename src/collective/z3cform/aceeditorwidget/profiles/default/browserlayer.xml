@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="collective.z3cform.aceeditorwidget"
+    interface="collective.z3cform.aceeditorwidget.interfaces.ILayer"
+  />
+</layers>
