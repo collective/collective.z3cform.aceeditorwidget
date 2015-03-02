@@ -1,6 +1,10 @@
 Intro
 -----
 
+.. image:: https://secure.travis-ci.org/collective/collective.z3cform.aceeditorwidget.png?branch=master
+    :alt: Travis CI badge
+    :target: http://travis-ci.org/collective/collective.z3cform.aceeditorwidget
+
 z3c.form widget that integrates ACE editor.
 
 Usage
