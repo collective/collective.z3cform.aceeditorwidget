@@ -3,16 +3,16 @@
 
   <javascript
     id="++resource++z3cform.aceeditorwidget/ace/src-min-noconflict/ace.js"
-    cacheable="True" compression="safe"
-    authenticated="False" cookable="False"
+    cacheable="False" compression="safe"
+    authenticated="True" cookable="False"
     enabled="True" expression=""
     inline="False"
     />
 
   <javascript
     id="++resource++z3cform.aceeditorwidget/ace_widget.js"
-    cacheable="True" compression="safe"
-    authenticated="False" cookable="False"
+    cacheable="False" compression="safe"
+    authenticated="True" cookable="False"
     enabled="True" expression=""
     inline="False"
     />
